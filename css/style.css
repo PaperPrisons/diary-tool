@@ -1,0 +1,546 @@
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;display=swap";
+@import "../build/tailwind.css";
+@import "../build/css/glide.core.min.css";
+@import url("https://cdn.quilljs.com/1.3.6/quill.snow.css");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+a {
+  color: #212121;
+  font-weight: bold;
+  position: relative;
+}
+a:hover {
+  text-decoration: none;
+  color: #707070;
+}
+
+.links {
+  color: #1a73e8 !important;
+}
+
+.links:hover {
+  padding: 1px 8px;
+  color: #1a73e8 !important;
+  background-color: #ffffff;
+  border: none;
+  border-width: 1px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 1px rgba(0, 0, 0.1, 0.213);
+  transition: padding 0.2s ease-in-out;
+  cursor: pointer;
+  outline: solid;
+  outline-width: 1px;
+  outline-color: #f9f9f9;
+}
+
+.external-links {
+  color: #1a73e8 !important;
+  background-image: linear-gradient(#e88f19, #e88f19);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease-in-out;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.external-links:hover {
+  background-size: 100% 3px;
+}
+
+.contact-links:hover {
+  color: black;
+}
+
+.text-indigo-500 {
+  text-decoration: none;
+  color: black;
+  /*font-weight: bold;*/
+  /*position: relative;*/
+}
+.text-indigo-500:hover {
+  color: #707070;
+}
+.px-5 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav > a {
+  padding: 14px 0px;
+  font-weight: bold;
+}
+
+.nav:hover {
+  color: #707070;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding-left: 1%;
+  /*min-width: 120px;*/
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  background-color: white;
+  float: left;
+  transform: translateX(-30px) translateY(5px);
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
+div.dropdown-content > a {
+  display: block;
+  text-decoration: none;
+}
+
+.contact {
+  /*display:none;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.75s ease-in-out;
+}
+
+.showContact:hover .contact {
+  display: block;
+  max-height: 750px;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+#gdoc {
+  max-width: 60%;
+}
+
+#signupButton {
+  margin-left: 20px;
+}
+
+.concise-statements ul {
+  list-style-type: disc;
+  padding-left: 5%;
+}
+
+.concise-statements ol {
+  list-style-type: lower-alpha;
+  padding-left: 5%;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+
+  height: auto;
+}
+
+@media screen and (min-width: 238px) {
+  #gDoc {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .nav {
+    width: 100%;
+    text-align: center;
+  }
+  .dropbtn:hover .dropdown-content {
+    display: none;
+  }
+  .contact {
+    display: block;
+    max-height: 750px;
+  }
+  #logo {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  button[name="btnMessage"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  button[name="btnJoin"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  button[name="btnMessage"] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  button[name="btnJoin"] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #map-text-container {
+    max-width: 1718px !important;
+  }
+}
+
+@media screen and (min-width: 1780px) {
+  svg {
+    left: 24px;
+  }
+  .mapcontainer {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (min-width: 1809px) {
+  .map {
+    left: 52px;
+  }
+}
+
+@media screen and (min-width: 1780px) {
+  svg {
+    max-height: 750px;
+    max-width: 1100px;
+  }
+
+  .text-gray-600,
+  .text-gray-700 {
+    color: #212121;
+  }
+}
+
+#quoteDiv {
+  position: relative;
+  /*background-color: #2e2e2e;*/
+  width: 90%;
+  min-height: 500px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  border-top: 2.25px solid rgb(0 0 0 / 3%);
+  box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%),
+    0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%),
+    0 41.8px 33.4px rgb(0 0 0 / 9%), 0 10px 10px rgb(0 0 0 / 12%);
+  /*box-shadow:*/
+  /*0 2.8px 2.2px rgba(0, 0, 0, 0.034),*/
+  /*0 6.7px 5.3px rgba(0, 0, 0, 0.048),*/
+  /*0 12.5px 10px rgba(0, 0, 0, 0.06),*/
+  /*0 22.3px 17.9px rgba(0, 0, 0, 0.072),*/
+  /*0 41.8px 33.4px rgba(0, 0, 0, 0.086),*/
+  /*0 100px 80px rgba(0, 0, 0, 0.12);*/
+}
+
+#blackDiv {
+  background-color: #2e2e2e;
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+#whiteDiv {
+  background-color: #fff;
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+
+.quote {
+  opacity: 0;
+  display: none;
+  margin: auto;
+  width: 80%;
+  font-size: 24px;
+  color: #fafafa;
+}
+
+.bQuote {
+  opacity: 0;
+  display: none;
+  margin: auto;
+  width: 80%;
+  font-size: 24px;
+  color: #2e2e2e;
+}
+
+.userinfo {
+  font-size: 24px;
+}
+
+.visible {
+  display: inline-block;
+  -webkit-animation: fadein ease-in 10s normal forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein ease-in 10s normal forwards; /* Firefox < 16 */
+  -ms-animation: fadein ease-in 10s normal forwards; /* Internet Explorer */
+  -o-animation: fadein ease-in 10s normal forwards; /* Opera < 12.1 */
+  animation: fadein ease-in 10s normal forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+div#quoteDiv #ppLogo {
+  float: right;
+  width: 7%;
+  position: relative;
+}
+#bottom {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  height: 15%;
+}
+#bottom2 {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  color: white;
+  font-size: 12;
+}
+
+@media screen and (max-width: 845px) {
+  #blackDiv,
+  #whiteDiv {
+    vertical-align: top;
+  }
+  .quote {
+    font-size: 18px;
+  }
+
+  .bQuote {
+    font-size: 18px;
+  }
+  .userinfo {
+    font-size: 18px;
+  }
+  #bottom {
+    height: 8%;
+  }
+  #bottom2 {
+    font-size: 10;
+  }
+}
+
+/*switch styles*/
+
+div.btn-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 10%;
+  margin: auto;
+}
+
+label {
+  font-size: 13px;
+  /*color: #424242;*/
+  font-weight: 500;
+}
+
+.btn-color-mode-switch {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner {
+  margin: 0px;
+  width: 200px;
+  height: 50px;
+  background: #151515;
+  color: #fff;
+  border-radius: 26px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+  display: block;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+  content: attr(data-on);
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  top: 7px;
+  left: 95px;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+  content: attr(data-off);
+  width: 105px;
+  height: 45px;
+  background: #6458ab; /*#9c3fc6;*/
+  border-radius: 26px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 5px 0px;
+}
+
+/*.btn-color-mode-switch > .alert{
+            display: none;
+            background: #FF9800;
+            border: none;
+            color: #fff;
+        }*/
+
+.btn-color-mode-switch input[type="checkbox"] {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0px;
+}
+
+/* .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+            background: #E0E0E0;
+            color: black;
+        }
+
+        .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+            content: attr(data-on);
+            left: 94px;
+            background: #6458ab;
+            color: #fff;
+        }
+
+        .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+            content: attr(data-off);
+            right: 105;
+            left: 5px;
+        }*/
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner,
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + span.btn-color-mode-switch-inner {
+  background: #e0e0e0;
+  color: black;
+}
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner:after {
+  content: attr(data-on);
+  left: 94px;
+  background: #6458ab;
+  color: #fff;
+}
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + span.btn-color-mode-switch-inner:after {
+  content: attr(data-on);
+  left: 94px;
+  background: #6458ab;
+  color: #fff;
+}
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner:before,
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + span.btn-color-mode-switch-inner:before {
+  content: attr(data-off);
+  right: 105;
+  left: 5px;
+}
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner {
+  /*background: #66BB6A; */
+  /*color: #fff;*/
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked ~ .alert {
+  display: block;
+}
+div#pause {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  background-color: grey;
+  border-radius: 25%;
+  width: 4rem;
+  height: 2rem;
+}
+div#pause p:hover {
+  cursor: pointer;
+}
+
+.btn-color-mode-switch > span.btn-color-mode-switch-inner {
+  margin: 0px;
+  width: 200px;
+  height: 50px;
+  background: #151515;
+  color: #fff;
+  border-radius: 26px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.btn-color-mode-switch > span.btn-color-mode-switch-inner:before {
+  content: attr(data-on);
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  top: 7px;
+  left: 95px;
+}
+
+.btn-color-mode-switch > span.btn-color-mode-switch-inner:after {
+  content: attr(data-off);
+  width: 105px;
+  height: 45px;
+  background: #6458ab;
+  border-radius: 26px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 5px 0px;
+}
