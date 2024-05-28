@@ -25,6 +25,10 @@ That's it! You have successfully integrated the Diary Tool into your website.
 
 ## Links to sample spreadsheets
 
-- [Testimony Quotes](https://docs.google.com/spreadsheets/d/1vZuEXFWs6IZxtkYXPe5M0gaVITSw0kfWYyjci9bBHyc/edit#gid=0)
+- [Impact of Expugemnet Quotes](https://docs.google.com/spreadsheets/d/1vZuEXFWs6IZxtkYXPe5M0gaVITSw0kfWYyjci9bBHyc/edit#gid=0)
 
 - [Diary Quotes](https://docs.google.com/spreadsheets/d/1vZuEXFWs6IZxtkYXPe5M0gaVITSw0kfWYyjci9bBHyc/edit#gid=0)
+
+## For queries/feedback
+- [vgujarathi@scu.edu](vgujarathi@scu.edu)
+- [cchien@berkley.edu](cchien@berkley.edu)
