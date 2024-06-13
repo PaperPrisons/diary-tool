@@ -1,6 +1,8 @@
-# diary-tool
+# Paper Prisons Initiative Diary Tool
 
-Modular Diary tool, easy to integrate with websites
+The Diary Tool is an animated widget that showcases testimonials from individuals impacted by the criminal justice system, fostering empathy and compassion. See our tool at [paperprisons.org/diary.html](https://www.paperprisons.org/diary.html), which provides responses to the questions: what has been the impact of a criminal record, what has been the impact of an expungement of a criminal record, on your life. Once you collect the data, you can customize the views to reflect various demographics, enabling you to better advocate for your target population. If you're unsure whether the Diary Tool is suitable for your organization, please refer to our [presentation](https://docs.google.com/presentation/d/e/2PACX-1vSUQxSEoaSosCPHbwN8Oeun-2hIiYJA1kOjmC4bzUyCtbPHllWpwjMrmzLQy9xdFteCF9PbqBxcSu8M/pub?start=false&loop=false&delayms=3000), which explains the first few steps of evaluating the tool and then collecting the responses.
+
+Once you’ve collected narratives to elevate, you can follow the steps to create a Diary Tool for your website.
 
 ## Integrating the tool
 
@@ -25,9 +27,9 @@ That's it! You have successfully integrated the Diary Tool into your website.
 
 ## Links to sample spreadsheets
 
-- [Impact of Expugemnet Quotes](https://docs.google.com/spreadsheets/d/1vZuEXFWs6IZxtkYXPe5M0gaVITSw0kfWYyjci9bBHyc/edit#gid=0)
+- [Impact of Expugemnet Quotes](https://docs.google.com/spreadsheets/d/1vZuEXFWs6IZxtkYXPe5M0gaVITSw0kfWYyjci9bBHyc/edit?usp=sharing)
 
-- [Diary Quotes](https://docs.google.com/spreadsheets/d/1vZuEXFWs6IZxtkYXPe5M0gaVITSw0kfWYyjci9bBHyc/edit#gid=0)
+- [Impact of Having a Record Quotes](https://docs.google.com/spreadsheets/d/1OPGJUwvGkFnKzUQNTBetU0BWKv0ViShp6gRep58yG5k/edit?usp=sharing)
 
 ## For queries/feedback
 - [vgujarathi@scu.edu](vgujarathi@scu.edu)
